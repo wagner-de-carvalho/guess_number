@@ -2,23 +2,23 @@
 
 <div>
     <p align="center">
-        <img src=https://img.shields.io/badge/status-development-orange"/>
+        <img src=https://img.shields.io/badge/status-development-orange />
     </p>
 
     <p>
-        ![GitHub Org's stars](https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social)
+        <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social />
     </p>
 
     <p>
-        ![GitHub Org's stars](https://img.shields.io/github/followers/wagner-de-carvalho?style=social)
+        <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social />
     </p>
 
     <p>
-        ![GitHub Org's stars](https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white)
+        <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white />
     </p>
 
     <p>
-        ![GitHub Org's stars](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+        <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white />
     </p>
 </div>
 
