@@ -108,9 +108,9 @@ defmodule Guess do
     end
   end
 
-  defp list_to_map(guesses_track) do
+  def list_to_map(guesses_track) do
     guesses_track
-    |> Enum.zip(0..Enum.count(guesses_track))
+    |> Enum.with_index()
     |> Enum.into(%{}, fn {v, k} -> {k, v} end)
   end
 end
