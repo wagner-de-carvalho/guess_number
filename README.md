@@ -1,38 +1,13 @@
 # Guess
 
-<div align="inline-block">
-<div>
-    <p align="flex">
-        <img src=https://img.shields.io/badge/status-development-orange"/>
-    </p>
+<div align="center">
+    <img src=https://img.shields.io/badge/status-development-orange"/>
+     <a href="">![GitHub Org's stars](https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social)</a>
+     <a href="">![GitHub Org's stars](https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social)</a>
+     <a href="">![GitHub Org's stars](https://img.shields.io/github/followers/wagner-de-carvalho?style=social)</a>
+     <a href="">![GitHub Org's stars](https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white)</a>
 </div>
-
-<div>
-    <p align="flex">
-        <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social />
-    </p>
-</div>
-
-<div align="flex">
-    <p>
-        <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social />
-    </p>
-</div>
-
-<div align="flex">
-    <p>
-        <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white />
-    </p>
-</div>
-
-<div align="flex">
-    <p>
-        <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white />
-    </p>
-</div>
-</div>
-
-
+       
 Aplicação na qual o usuário deve adivinhar o número aleatório sorteado. Os números escolhidos são armazenados e, no final, é apresentada uma mensagem, de acordo com o desempenho do usuário, e os números escolhidos.
 
 ### Como jogar?
