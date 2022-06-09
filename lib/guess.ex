@@ -15,25 +15,33 @@ defmodule Guess do
     |> play()
   end
 
-  def parse_input(:error) do
+  defp parse_input(:error) do
     IO.puts("Invalid input !!!")
     run()
   end
 
-  def parse_input({num, _}), do: num
+  defp parse_input({num, _}), do: num
 
-  def parse_input(data) do
+  defp parse_input(data) do
     data
     |> Integer.parse()
     |> parse_input()
   end
 
-  def pickup_number(level) do
+  defp pickup_number(level) do
     level
     |> get_range()
     |> Enum.random()
   end
 
+  @spec get_range(any) :: %{
+          optional(:__struct__) => Range,
+          optional(:first) => 1,
+          optional(:last) => 10 | 100 | 1000,
+          optional(:message) => any,
+          optional(:step) => 1,
+          optional(:tried_numbers) => any
+        }
   def get_range(level) do
     case level do
       1 ->
@@ -51,14 +59,14 @@ defmodule Guess do
     end
   end
 
-  def play(picked_num) do
+  defp play(picked_num) do
     number = IO.gets("I have my number. What is your guess? ")
     |> parse_input()
 
     guess(number, picked_num, 1, [number])
   end
 
-  def guess(usr_guess, picked_num, count, guesses_track) when usr_guess > picked_num do
+  defp guess(usr_guess, picked_num, count, guesses_track) when usr_guess > picked_num do
     number =
       IO.gets("Too high. Guess again: ")
       |> parse_input()
@@ -68,7 +76,7 @@ defmodule Guess do
     guess(number, picked_num, count + 1, guesses_track)
   end
 
-  def guess(usr_guess, picked_num, count, guesses_track) when usr_guess < picked_num do
+  defp guess(usr_guess, picked_num, count, guesses_track) when usr_guess < picked_num do
     number =
       IO.gets("Too low. Guess again: ")
       |> parse_input()
@@ -78,15 +86,15 @@ defmodule Guess do
     guess(number, picked_num, count + 1, guesses_track)
   end
 
-  def guess(_usr_guess, _picked_num, count, guesses_track) do
+  defp guess(_usr_guess, _picked_num, count, guesses_track) do
     IO.puts("You got it #{count} #{if count > 1 do "guesses" else "guess" end} !")
     show_score(count, guesses_track)
   end
 
-  def show_score(guesses, guesses_track) when guesses > 6,
+  defp show_score(guesses, guesses_track) when guesses > 6,
     do: %{message: "Better luck next time !", tried_numbers: guesses_track}
 
-  def show_score(guesses, guesses_track) do
+  defp show_score(guesses, guesses_track) do
     message =
       %{
         (1..1) => "You're a mind reader !",
@@ -106,10 +114,5 @@ defmodule Guess do
       false -> nil
       true -> IO.puts("Number #{number} already picked !")
     end
-  end
-
-  def parse_numbers(guesses_track) do
-    guesses_track
-    # Integer.parse()
   end
 end
