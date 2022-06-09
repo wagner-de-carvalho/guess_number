@@ -34,14 +34,6 @@ defmodule Guess do
     |> Enum.random()
   end
 
-  @spec get_range(any) :: %{
-          optional(:__struct__) => Range,
-          optional(:first) => 1,
-          optional(:last) => 10 | 100 | 1000,
-          optional(:message) => any,
-          optional(:step) => 1,
-          optional(:tried_numbers) => any
-        }
   def get_range(level) do
     case level do
       1 ->
@@ -92,7 +84,7 @@ defmodule Guess do
   end
 
   defp show_score(guesses, guesses_track) when guesses > 6,
-    do: %{message: "Better luck next time !", tried_numbers: guesses_track}
+    do: %{message: "Better luck next time !", tried_numbers: list_to_map(guesses_track)}
 
   defp show_score(guesses, guesses_track) do
     message =
@@ -106,7 +98,7 @@ defmodule Guess do
       end)
       |> elem(1)
 
-    %{message: message, tried_numbers: guesses_track}
+    %{message: message, tried_numbers: list_to_map(guesses_track)}
   end
 
   defp guessed_number_message(number, guesses_track) do
@@ -114,5 +106,11 @@ defmodule Guess do
       false -> nil
       true -> IO.puts("Number #{number} already picked !")
     end
+  end
+
+  defp list_to_map(guesses_track) do
+    guesses_track
+    |> Enum.zip(0..Enum.count(guesses_track))
+    |> Enum.into(%{}, fn {v, k} -> {k, v} end)
   end
 end
