@@ -5,6 +5,10 @@
 </div>
 
 <div display="inline">
+    <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white/>
+</div>
+
+<div display="inline">
     <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social/>
 </div>
 
