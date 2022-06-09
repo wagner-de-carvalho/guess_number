@@ -1,6 +1,7 @@
 # Guess
 
 <div>
+<div>
     <p align="flex">
         <img src=https://img.shields.io/badge/status-development-orange"/>
     </p>
@@ -28,6 +29,7 @@
     <p>
         <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white />
     </p>
+</div>
 </div>
 
 
