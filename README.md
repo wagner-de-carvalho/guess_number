@@ -1,24 +1,7 @@
 # Guess
 
-<div display="inline">
-    <img src=https://img.shields.io/badge/status-development-orange/>
-</div>
 
-<div display="inline">
-    <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white/>
-</div>
-
-<div display="inline">
-    <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social/>
-</div>
-
-<div display="inline">
-    <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social/>
-</div>
-
-<div display="inline"> 
-    <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white/>
-</div>
+<img src=https://img.shields.io/badge/status-development-orange/> <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white/> <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social/> <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social/> <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white/>
        
 Aplicação na qual o usuário deve adivinhar o número aleatório sorteado. Os números escolhidos são armazenados e, no final, é apresentada uma mensagem, de acordo com o desempenho do usuário, e os números escolhidos.
 
