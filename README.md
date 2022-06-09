@@ -1,30 +1,30 @@
 # Guess
 
 <div>
-    <p align="center">
+    <p align="flex">
         <img src=https://img.shields.io/badge/status-development-orange"/>
     </p>
 </div>
 
 <div>
-    <p>
+    <p align="flex">
         <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social />
     </p>
 </div>
 
-<div>
+<div align="flex">
     <p>
         <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social />
     </p>
 </div>
 
-<div>
+<div align="flex">
     <p>
         <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white />
     </p>
 </div>
 
-<div>
+<div align="flex">
     <p>
         <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white />
     </p>
