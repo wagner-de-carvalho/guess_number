@@ -1,32 +1,22 @@
 # Guess
 
-<style>
-  .img {
-    display: inline-block;
-  }
-  img.mobile-image {
-    width: 49%;
-    display: inline-block;
-  }
-</style>
-
-<div class="mobile-image">
+<div display="inline-block">
     <img src=https://img.shields.io/badge/status-development-orange/>
 </div>
 
-<div class="mobile-image">
+<div display="inline-block">
     <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white/>
 </div>
 
-<div class="mobile-image">
+<div display="inline-block">
     <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social/>
 </div>
 
-<div class="mobile-image">
+<div display="inline-block">
     <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social/>
 </div>
 
-<div class="mobile-image"> 
+<div display="inline-block"> 
     <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white/>
 </div>
        
