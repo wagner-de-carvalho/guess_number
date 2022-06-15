@@ -46,39 +46,39 @@ defmodule Guess do
         1..1000
 
       _ ->
-        IO.puts("Invalid level!!!")
+        IO.puts("Invalid level!!!\n")
         run()
     end
   end
 
   defp play(picked_num) do
-    number = IO.gets("I have my number. What is your guess? ")
+    number = IO.gets("I have my number. What is your guess? \nPlay: ")
     |> parse_input()
-
-    guess(number, picked_num, 1, [number])
+    guess(number, picked_num, [number])
   end
 
-  defp guess(usr_guess, picked_num, count, guesses_track) when usr_guess > picked_num do
+  defp guess(usr_guess, picked_num, guesses_track) when usr_guess > picked_num do
     number =
-      IO.gets("Too high. Guess again: ")
+      IO.gets("Too high. Guess again! \nPlay: ")
       |> parse_input()
 
     guessed_number_message(number, guesses_track)
     guesses_track = guesses_track ++ [number]
-    guess(number, picked_num, count + 1, guesses_track)
+    guess(number, picked_num, guesses_track)
   end
 
-  defp guess(usr_guess, picked_num, count, guesses_track) when usr_guess < picked_num do
+  defp guess(usr_guess, picked_num, guesses_track) when usr_guess < picked_num do
     number =
-      IO.gets("Too low. Guess again: ")
+      IO.gets("Too low. Guess again! \nPlay: ")
       |> parse_input()
 
     guessed_number_message(number, guesses_track)
     guesses_track = guesses_track ++ [number]
-    guess(number, picked_num, count + 1, guesses_track)
+    guess(number, picked_num, guesses_track)
   end
 
-  defp guess(_usr_guess, _picked_num, count, guesses_track) do
+  defp guess(_usr_guess, _picked_num, guesses_track) do
+    count = Enum.count(guesses_track)
     IO.puts("You got it #{count} #{if count > 1 do "guesses" else "guess" end} !")
     show_score(count, guesses_track)
   end
@@ -104,7 +104,7 @@ defmodule Guess do
   defp guessed_number_message(number, guesses_track) do
     case number in guesses_track do
       false -> nil
-      true -> IO.puts("Number #{number} already picked !")
+      true -> IO.puts("Number #{number} already picked !\n")
     end
   end
 
