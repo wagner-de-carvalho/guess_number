@@ -1,20 +1,15 @@
 # Guess
+![Elixir](https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Development](https://img.shields.io/badge/status-development-orange)
+![Stars](https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social)
+![Followers]https://img.shields.io/github/followers/wagner-de-carvalho?style=social)
 
-<div display="inline-block"> 
-    <img src=https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white/>
-</div>
 
-<div display="inline-block">
-    <img src=https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white/>
-</div>
 
-<div display="inline-block">
-    <img src=https://img.shields.io/badge/status-development-orange/>
-</div>
 
-<div display="inline-block">
-    <img src=https://img.shields.io/github/stars/wagner-de-carvalho/guess_number?style=social/>
-</div>
+
+
 
 <div display="inline-block">
     <img src=https://img.shields.io/github/followers/wagner-de-carvalho?style=social/>
